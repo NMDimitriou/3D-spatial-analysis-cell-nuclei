@@ -1,8 +1,8 @@
 function varargout = calc_ind_knd(coord,name)
 %% Plots the inter-nuclei distances and the nearest-neighbor distances.
-% input: the coordinates of the nuclei centroids, and fstr the color of the
-% line
-% output: the plots
+% input: the coordinates of the nuclei centroids, and the name of the output file
+% output: two files that contain the distances
+%         two files with the corresponding distributions
 % Author: Nikolaos M. Dimitriou, 
 % McGill University, 2020
 
