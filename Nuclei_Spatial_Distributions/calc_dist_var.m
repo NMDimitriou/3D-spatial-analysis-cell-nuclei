@@ -1,7 +1,7 @@
 function varargout = calc_dist_var(INDist,KNDist,name1,name2)
 %% Computes variation between distributions using the Cosine similarity measure
 % Input: 
-%   INDist: Inter-Nuclei distances
+%   INDist: Inter-Nucleic distances
 %   KNDist: Nearest-Neighbour distances
 %   name1, name2: the names for the output files
 % Output: the files with the cosine similarity of the distributions
