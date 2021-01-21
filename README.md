@@ -29,7 +29,7 @@ These three steps are implemented in the **dist_all.m** script in MATLAB. Suppor
 
 
 **3. Points to density**
-The **points2density.m** script imports the coordinates of the centroids of the segmented nuclei and calculates their spatial density profiles using the [Adaptive kernel density estimator via diffusion](https://people.smp.uq.edu.au/DirkKroese/ps/AOS799.pdf).
+* The **points2density.m** script imports the coordinates of the centroids of the segmented nuclei and calculates their spatial density profiles using the [Adaptive kernel density estimator via diffusion](https://people.smp.uq.edu.au/DirkKroese/ps/AOS799.pdf).
 
 **Citing**: If you use this code, please [cite this article]( ) (to be added) in your publications. :)   
 
