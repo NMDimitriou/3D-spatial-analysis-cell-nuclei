@@ -257,8 +257,8 @@ run plotopt.m
 h=figure('Name','IND','Position', [100, 100, 1200, 900]);
 for i=1:length(tp)
     
-    %subplot(3,3,i);
-    subaxis(3,3,i, 'Spacing', 0.08, 'Padding', 0.015, 'Margin', 0.08);
+    subplot(3,3,i);
+    %subaxis(3,3,i, 'Spacing', 0.08, 'Padding', 0.015, 'Margin', 0.08);
     hax=gca;
     hold on
     for j=1:length(group1)
@@ -289,7 +289,8 @@ print(h,['IND_group1.png'],'-dpng','-r350')
 h=figure('Name','KND','Position', [100, 100, 1200, 900]);
 for i=1:length(tp)
     
-    subaxis(3,3,i, 'Spacing', 0.08, 'Padding', 0.015, 'Margin', 0.08);
+    subplot(3,3,i);
+    %subaxis(3,3,i, 'Spacing', 0.08, 'Padding', 0.015, 'Margin', 0.08);
     hax=gca;
     hold on
     for j=1:length(group1)
