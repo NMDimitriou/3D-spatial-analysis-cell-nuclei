@@ -38,7 +38,6 @@ These three steps are implemented in the **dist_all_s1.m** script in MATLAB. Sup
 
 Supporting files to this script are:
 * *akde.m*: Script for adaptive kernel density estimation for high dimensions. ([link](https://www.mathworks.com/matlabcentral/fileexchange/58312-kernel-density-estimator-for-high-dimensions))
-* *natsort.m*: Natural-Order Filename Sort. ([link](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort))
 
 **4. Coordinates of centroids of segmented nuclei**
 * This directory contains the 3D coordinates of centroids of segmented nuclei from 6 datasets, for each time-point D#. The nuclei were segmented using the
