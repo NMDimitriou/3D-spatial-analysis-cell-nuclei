@@ -19,7 +19,7 @@
 * Cosine similarity between two distance distributions of different time-points
 * Visualization
 
-These three steps are implemented in the **dist_all.m** script in MATLAB. Supporting files to this script are:
+These three steps are implemented in the **dist_all_s1.m** script in MATLAB. Supporting files to this script are:
 * *calc_ind_knd.m*: Computes the Inter-Nucleic and the Nearest Neighbor distance distributions and saves both distances and kernel smoothed distributions.
 * *calc_dist_var.m*: Computes the variations between distributions of two different time-points using the Cosine similarity measure and saves them.
 * *cosine_sim.m*: Function for the Cosine-similarity measure. Invoked by *calc_dist_var.m*.
