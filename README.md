@@ -16,13 +16,15 @@
 
 **2. Nuclei Spatial Distributions**
 * Inter-Nuclei, and Nearest-Neighbour Distance distributions
-* Cosine similarity between two distance distributions
+* Cosine similarity between two distance distributions of different time-points
 * Visualization
 
 These three steps are implemented in the **dist_all.m** script in MATLAB. Supporting files to this script are:
 * calc_ind_knd.m
 * calc_dist_var.m
 * cosine_sim.m
+* violinplot.m
+* Violin.m
 * mtit.m
 * natsort.m
 * plotopt.m
