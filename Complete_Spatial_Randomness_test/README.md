@@ -2,4 +2,4 @@
 
 * To parallelize calcEnv.R in your computer, just modify the *ncores* variable with the number of your available cores.
 
-* To run the **Kenvplot_all.m** you may need to specify the folder of the data produced by **calcEnv.R** inside the script. The default folder is *resEnv_K_original/*.
+* To run the **Kenvplot_all.m** you may need to specify the folder of the data produced by **calcEnv.R** inside the script. The default folder is *resEnv_sim_comp/K_env/*.
