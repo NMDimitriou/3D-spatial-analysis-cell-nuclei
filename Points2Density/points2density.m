@@ -26,7 +26,7 @@ disp('Importing coordinates...')
 for i=1:lg
     for j=1:lt
        
-        samp{i,j}=dir(['res_coord_scaled/' tp{j} '/' group{i}]);
+        samp{i,j}=dir(['../res_coord_scaled/' tp{j} '/' group{i}]);
         coord.(gname{i}).(tp{j})=readmatrix([samp{i,j}.folder '/' samp{i,j}.name]);
         count.(gname{i}).(tp{j})=length(coord.(gname{i}).(tp{j})(:,1));
         % Scale them in order for cells to be points
