@@ -6,7 +6,7 @@ clear; clc; close all;
 tp    = {'D0' 'D2' 'D5' 'D7' 'D9' 'D12' 'D14'}; % names for time-points
 % Series 1
 group = {'A*C*.txt','A*E*.txt','B*E*.txt','B*N*.txt','B*W*.txt','F*W*.txt'}; % file names
-gname = {'AC','AE','BE','BN','BW','FW'}; struct field names
+gname = {'AC','AE','BE','BN','BW','FW'}; %struct field names
 
 lg    = length(group);
 disp(['Number of datasets: ' num2str(lg)]);
