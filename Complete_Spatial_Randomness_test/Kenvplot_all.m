@@ -7,24 +7,33 @@ clear; clc; close all;
 tp    = {'D0' 'D2' 'D5' 'D7' 'D9' 'D12' 'D14'};
 group = {'*A*C*.csv','*A*E*.csv','*B*E*.csv','*B*N*.csv','*B*W*.csv','*F*W*.csv'};
 gname = {'AC','AE','BE','BN','BW','FW'};
+lg    = length(group);
+ntp   = length(tp);
+
+in_folder  = 'resEnv_K_original/';
+out_folder = 'Figures';
+
+if ~exist(out_folder, 'dir')
+    mkdir(out_folder)
+end
 
 run plotopt.m
 
 %% Import the results from point pattern analysis
 
-for i=1:length(group)
+for i=1:lg
    
-    samp{i}=dir(['resEnv_K_original/' group{i}]);
+    samp{i}=dir([in_folder group{i}]);
     names     = {samp{i}.name};
     names     = natsort(names);
     for j=1:length(tp)
-        Kenv.(tp{j}).(gname{i})=readtable(['resEnv_K_original/' names{j}]);
+        Kenv.(tp{j}).(gname{i})=readtable([in_folder names{j}]);
     end
 end
 
 %% Plot
 c=1;
-for i=1:length(group)
+for i=1:lg
     h=figure('Name',gname{i},'Position', [100, 100, 1200, 900]);
     ah = gobjects(7, 1);
     for j=1:length(tp)
@@ -49,12 +58,12 @@ for i=1:length(group)
     set(h,'Units','Inches');
     pos = get(h,'Position');
     set(h,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
-    print(h,['Figures/K_' gname{i} '.png'],'-dpng','-r0')
+    print(h,[out_folder '/' 'K_' gname{i} '.png'],'-dpng','-r350')
 end
 %% Envelope from all distributions
 h=figure('Name','Average K','Position', [100, 100, 1200, 900]);
 c=1;
-for i=1:length(tp)
+for i=1:ntp
    
     env{i}=struct2cell(Kenv.(tp{i}));
     subplot(3,3,c);
@@ -76,44 +85,4 @@ set(hL,'Position', newPosition,'Units', newUnits);
 set(h,'Units','Inches');
 pos = get(h,'Position');
 set(h,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
-print(h,['Figures/K_average.png'],'-dpng','-r0')
-
-%% Calculate differences of K between two subsequent days
-%{
-for i=1:length(tp)-1
-    j=i+1;
-    for k=1:length(group)
-   
-        dKenv.([tp{i} tp{j}]).(gname{k})=[Kenv.(tp{j}).(gname{k}).r, Kenv.(tp{j}).(gname{k}).obs - Kenv.(tp{i}).(gname{k}).obs];
-        
-    end
-end
-
-%% Plot the envelope of the differences
-h=figure('Name','Average dK','Position', [100, 100, 1200, 900]);
-for i=1:length(tp)-1
-   
-    j=i+1;
-    denv{i}=struct2cell(dKenv.([tp{i} tp{j}]));
-    subplot(3,3,i);
-    diffenvelope(denv{i});
-    title([tp{j} '-' tp{i}],'Interpreter','latex');
-    
-end
-hh = mtit(' ');
-xlh=xlabel(hh.ah,'Neighborhood radius $r$ $(\mu m)$'); 
-set(xlh, 'Visible', 'On');
-ylh=ylabel(hh.ah,'$\langle \Delta K(r) \rangle $');
-set(ylh, 'Visible', 'On');
-hL=legend({'Observed','Observed SEM'},'Interpreter','latex','FontSize',16,...
-        'Location','southeastoutside','NumColumns',1);
-%hL=legend(gname,'Interpreter','latex','FontSize',16,...
-%        'Location','southeastoutside','NumColumns',1);
-newPosition = [0.8 0.2 0.1 0.1];
-newUnits = 'normalized';
-set(hL,'Position', newPosition,'Units', newUnits);
-set(h,'Units','Inches');
-pos = get(h,'Position');
-set(h,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
-print(h,['Figures/diffK_average.png'],'-dpng','-r0')
-%}
+print(h,[out_folder '/' 'K_average.png'],'-dpng','-r350')
