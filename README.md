@@ -1,7 +1,7 @@
 # 3D-spatial-analysis-cell-nuclei
 3D spatial analysis of cell/nuclei represented by their centroids
 
-**Citing**: If you use this code, please [cite this article]( ) (to be added) in your publications. :)   
+**Citing**: If you use this code or data, please [cite this article]( ) (to be added) in your publications. :)   
 
 **Contact**: For any questions or comments feel free to contact me at this emai address: nikolaos.dimitriou@mail.mcgill.ca
 
