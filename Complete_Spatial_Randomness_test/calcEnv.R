@@ -10,7 +10,7 @@ calcEnv <- function(A,fname){
   boxr    <- box3(xrange = c(1,2500),yrange = c(1,2500),zrange = c(1,917),unitname = "microns") #1,max(A[,3])
   coorA   <- pp3(A$V1,A$V2,A$V3,boxr,marks = NULL)
   calcEnv <- envelope.pp3(coorA, K3est, correction = c("isotropic","translation"), nsim=99, nrank=1)#, transform = expression(. -4*pi*r^3/3))
-  write.csv(calcEnv,paste("../resEnv_sim_comp/K_env/Kenv_raw_series_1",fname,"csv",sep = "."),row.names = FALSE)
+  write.csv(calcEnv,paste("resEnv_sim_comp/K_env/Kenv_raw_series_1",fname,"csv",sep = "."),row.names = FALSE)
   return(fname)
 }
 
