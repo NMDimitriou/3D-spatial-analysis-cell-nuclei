@@ -26,7 +26,6 @@ These three steps are implemented in the **dist_all_s1.m** script in MATLAB. Sup
 * *violinplot.m*: Plots the cosine-similarity between distributions of two different time-points. ([link](https://github.com/bastibe/Violinplot-Matlab))
 * *Violin.m*: Invoked by *violinplot.m*. ([link](https://github.com/bastibe/Violinplot-Matlab))
 * *mtit.m*: Creates a major title above all subplots. ([link](https://www.mathworks.com/matlabcentral/fileexchange/3218-mtit-a-pedestrian-major-title-creator))
-* *natsort.m*: Natural-Order Filename Sort. ([link](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort))
 * *plotopt.m*: Plot options
 
 
