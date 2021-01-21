@@ -1,12 +1,12 @@
 function varargout = calc_ind_knd(coord,name)
-%% Plots the inter-nuclei distances and the nearest-neighbor distances.
+%% Plots the inter-nucleic distances and the nearest-neighbor distances.
 % input: the coordinates of the nuclei centroids, and the name of the output file
 % output: two files that contain the distances
 %         two files with the corresponding distributions
 % Author: Nikolaos M. Dimitriou, 
 % McGill University, 2020
 
-INDist = pdist(coord, 'euclidean'); % Inter nuclei distance 
+INDist = pdist(coord, 'euclidean'); % Inter nucleic distance 
 [f1,xi1] = ksdensity(INDist);
 fileID   = fopen(['Distances/INDist/INDist_' name '.bin'],'w');
 fwrite(fileID,INDist,'double');
