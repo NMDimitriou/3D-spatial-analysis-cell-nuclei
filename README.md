@@ -1,6 +1,10 @@
 # 3D-spatial-analysis-cell-nuclei
 3D spatial analysis of cell/nuclei represented by their centroids
 
+**Citing**: If you use this code, please [cite this article]( ) (to be added) in your publications. :)   
+
+**Contact**: For any questions or comments feel free to contact me at this emai address: nikolaos.dimitriou@mail.mcgill.ca
+
 ## Folders
 
 **1. Complete Spatial Randomness test**
@@ -36,6 +40,3 @@ Supporting files to this script are:
 * *akde.m*: Script for adaptive kernel density estimation for high dimensions. ([link](https://www.mathworks.com/matlabcentral/fileexchange/58312-kernel-density-estimator-for-high-dimensions))
 * *natsort.m*: Natural-Order Filename Sort. ([link](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort))
 
-**Citing**: If you use this code, please [cite this article]( ) (to be added) in your publications. :)   
-
-**Contact**: For any questions or comments feel free to contact me at this emai address: nikolaos.dimitriou@mail.mcgill.ca
