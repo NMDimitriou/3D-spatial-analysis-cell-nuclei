@@ -16,16 +16,20 @@
 
 **2. Nuclei Spatial Distributions**
 * Inter-Nuclei, and Nearest-Neighbour Distance distributions
-* Kullback-Leiber divergence between two distance distributions
+* Cosine similarity between two distance distributions
 * Visualization
 
 These three steps are implemented in the **dist_all.m** script in MATLAB. Supporting files to this script are:
 * calc_ind_knd.m
 * calc_dist_var.m
-* KLDiv.m
+* cosine_sim.m
 * mtit.m
 * natsort.m
 * plotopt.m
+
+
+**3. Points to density**
+The **points2density.m** script imports the coordinates of the centroids of the segmented nuclei and calculates their spatial density profiles using the [Adaptive kernel density estimator via diffusion](https://people.smp.uq.edu.au/DirkKroese/ps/AOS799.pdf).
 
 **Citing**: If you use this code, please [cite this article]( ) (to be added) in your publications. :)   
 
