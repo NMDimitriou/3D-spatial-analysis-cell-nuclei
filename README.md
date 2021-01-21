@@ -19,7 +19,7 @@
   * *plotshaded.m*: Sahdes the envelope of K-Function. Adopted from [Jakob Voigts](http://jvoigts.scripts.mit.edu/blog/nice-shaded-plots/)
 
 **2. Nucleic Spatial Distributions**
-* Inter-Nuclei, and Nearest-Neighbour Distance distributions
+* Inter-Nucleic, and Nearest-Neighbour Distance distributions
 * Cosine similarity between two distance distributions of different time-points
 * Visualization
 
