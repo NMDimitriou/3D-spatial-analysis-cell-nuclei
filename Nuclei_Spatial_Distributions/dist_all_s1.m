@@ -4,7 +4,7 @@
 clear; clc; close all;
 
 % the parent directory that contains the subdirectories of the time-points
-file1  = 'res_coord_scaled/';
+file1  = '../res_coord_scaled/';
 
 % the list of the time-point subdirectories that contain the data
 tp     = {'D0' 'D2' 'D5' 'D7' 'D9' 'D12' 'D14'};
