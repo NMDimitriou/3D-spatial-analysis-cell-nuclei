@@ -15,7 +15,7 @@
   * *envelope.m*: Plots the envelope of the summary K-function for three-dimensional point patterns from all the samples.
   * *mtit.m*: Creates a major title above all subplots. ([link](https://www.mathworks.com/matlabcentral/fileexchange/3218-mtit-a-pedestrian-major-title-creator))
   * *natsort.m*: Natural-Order Filename Sort. ([link](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort))
-  * *plotopt.m*: Natural-Order Filename Sort. ([link](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort))
+  * *plotopt.m*: Plot options
   * *plotshaded.m*: Sahdes the envelope of K-Function. Adopted from [Jakob Voigts](http://jvoigts.scripts.mit.edu/blog/nice-shaded-plots/)
 
 **2. Nucleic Spatial Distributions**
