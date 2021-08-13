@@ -1,7 +1,11 @@
 # 3D-spatial-analysis-cell-nuclei
 3D spatial analysis of cell/nuclei represented by their centroids
 
-**Citing**: If you use this code or data, please [cite this article]( ) (to be added) in your publications. :)   
+**Citing**: If you use this code or data, please cite the following article in your publications. :)  
+
+Detection and Spatiotemporal analysis of in-vitro 3D migratory Triple-Negative Breast cancer cells
+Nikolaos M. Dimitriou, Salvador Flores-Torres, Joseph Matthew Kinsella, Georgios D. Mitsis
+bioRxiv 2021.07.29.454312; doi: https://doi.org/10.1101/2021.07.29.454312 
 
 **Contact**: For any questions or comments feel free to contact me at this emai address: nikolaos.dimitriou@mail.mcgill.ca
 
