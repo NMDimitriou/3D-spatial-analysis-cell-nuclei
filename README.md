@@ -3,9 +3,9 @@
 
 **Citing**: If you use this code or data, please cite the following article in your publications. :)  
 
-Detection and Spatiotemporal analysis of in-vitro 3D migratory Triple-Negative Breast cancer cells <br />
-Nikolaos M. Dimitriou, Salvador Flores-Torres, Joseph Matthew Kinsella, Georgios D. Mitsis <br />
-bioRxiv 2021.07.29.454312; doi: https://doi.org/10.1101/2021.07.29.454312 
+> Detection and Spatiotemporal analysis of in-vitro 3D migratory Triple-Negative Breast cancer cells <br />
+> Nikolaos M. Dimitriou, Salvador Flores-Torres, Joseph Matthew Kinsella, Georgios D. Mitsis <br />
+> bioRxiv 2021.07.29.454312; doi: https://doi.org/10.1101/2021.07.29.454312 
 
 **Contact**: For any questions or comments feel free to contact me at this email address: nikolaos.dimitriou@mail.mcgill.ca
 
